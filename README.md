@@ -61,6 +61,7 @@ elastic_search/
 ### Clonar/Acessar o Repositório
 
 ```bash
+git clone https://github.com/biancalahm/rag-experiments.git
 
 ```
 

@@ -1,0 +1,12 @@
+# --- Core e Integração LLM ---
+langchain-core          # Estruturas de dados e base do LangChain
+langchain-ollama        # Conexão com Ollama (Llama 3.1, Qwen2)
+
+# --- Armazenamento e Busca Vetorial ---
+langchain-elasticsearch # Integração com o banco de dados Elasticsearch
+elasticsearch           # Cliente oficial do Elasticsearch para Python
+
+# --- Processamento de Documentos ---
+pypdf                   # Leitor de arquivos PDF
+langchain-community     # Loaders e ferramentas da comunidade (PyPDFLoader)
+langchain-text-splitters # Divisor de texto (RecursiveCharacterTextSplitter)

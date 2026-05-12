@@ -1,0 +1,16 @@
+# Ignorar cache do Python
+__pycache__/
+*.py[cod]
+
+# Ignorar ambientes virtuais
+.env
+.venv/
+venv/
+
+# Ignorar arquivos PDF
+*.pdf
+
+# Opcional: arquivos do sistema/editor
+.vscode/
+.idea/
+.DS_Store

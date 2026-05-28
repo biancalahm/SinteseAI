@@ -11,7 +11,7 @@ from langchain_classic.chains.combine_documents import create_stuff_documents_ch
 from support.constants import Constants as const
 load_dotenv()
 
-class AuditoriaRAG:
+class RAG:
     def __init__(self, retriever):
         """
         Inicializa o modelo e monta a estrutura lógica do Chat uma única vez.
@@ -85,7 +85,7 @@ class AuditoriaRAG:
             "input": question,
             "chat_history": chat_history
         })
-        print(f"Resposta do RAG: {resposta}")
+        #print(f"Resposta do RAG: {resposta}")
         # Recuperação de metadados dos documentos coletados na busca do ElasticSearch
         docs = resposta.get("context", [])
         pages = sorted(list(set([str(d.metadata.get('page', '?')) for d in docs])))

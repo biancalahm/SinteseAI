@@ -1,5 +1,5 @@
 # main.py
-from rag_agent import AuditoriaRAG
+from rag_agent import RAG
 from langchain_core.messages import HumanMessage, AIMessage
 from load_file import PDFProcessor
 from vector_db_manager import VectorDBManager
@@ -11,7 +11,7 @@ db_manager = VectorDBManager(es_url=const.ELASTIC_SEARCH_URL)
 index_name = const.INDEX_NAME 
 meu_retriever = db_manager.get_retriever(index_name, 5)
 
-agente = AuditoriaRAG(retriever=meu_retriever)
+agente = RAG(retriever=meu_retriever)
 historico_chat = []
 
 print("Bem-vindo ao Chat para extração de informações em documentos. Digite 'sair' para encerrar.")

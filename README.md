@@ -61,7 +61,7 @@ elastic_search/
 ### Clonar/Acessar o Repositório
 
 ```bash
-git clone https://github.com/biancalahm/rag-experiments.git
+git clone https://github.com/biancalahm/sinteseIA.git
 
 ```
 
@@ -194,7 +194,7 @@ processor = PDFProcessor(
 )
 ```
 
-### LLM (Llama 3.1)
+### LLM (qwen2.5:latestLlama 3.1)
 
 ```python
 llm = Llm(model='qwen2.5:latest')  # Temperature=0 (respostas determinísticas)

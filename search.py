@@ -5,7 +5,7 @@ class SearchReport:
         Recebe uma instância do VectorDBManager já configurada. 
         Pré configura o LLM (Llama 3.1) para uso.
         """
-        self.llm = Llm(model="llama3.1") 
+        self.llm = Llm() 
         self.db = vector_manager
         
 
@@ -21,8 +21,9 @@ class SearchReport:
             return result
         except Exception as e:
             return {
-                "question": f"Erro ao processar análise: {str(e)}",
-                "pages": "N/A"
+                "answer": f"Erro ao processar análise: {str(e)}",
+                "pages": "N/A",
+                "document_name": "N/A"
             }
 
     def print_result(self, question, result):

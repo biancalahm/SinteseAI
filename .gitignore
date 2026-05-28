@@ -14,3 +14,6 @@ venv/
 .vscode/
 .idea/
 .DS_Store
+# arquivo de conexão do servidor LLM interno 
+connect_server_llm.py
+llm.py
